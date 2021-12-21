@@ -13,8 +13,8 @@ Detailed discussions can be found here: https://www.notion.so/CS523-Big-Brain-Mo
 Repo consists of two parts: The BigBrain Kubernetes operator (as shown in the demo video) and the experiments as jupyter notebooks(as described in the report)
 
 Create the following conda env to run the experiments:
+
 '''
-# Run:
 conda create --name pytorch_baechi python=3.6
 conda activate pytorch_baechi
 
