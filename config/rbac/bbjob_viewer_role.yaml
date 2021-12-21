@@ -1,0 +1,20 @@
+# permissions for end users to view bbjobs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: bbjob-viewer-role
+rules:
+- apiGroups:
+  - big-brain.github.com
+  resources:
+  - bbjobs
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - big-brain.github.com
+  resources:
+  - bbjobs/status
+  verbs:
+  - get

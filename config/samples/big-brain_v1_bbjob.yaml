@@ -1,0 +1,10 @@
+apiVersion: big-brain.github.com/v1
+kind: BBJob
+metadata:
+  name: bbjob-sample
+spec:
+  # TODO(user): Add fields here
+  model: resnet50
+  data: /data/train.tfrecord
+  loss: crossentropy
+  optimizer: adam  

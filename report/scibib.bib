@@ -1,0 +1,156 @@
+% scibib.bib
+
+% This is the .bib file used to compile the document "A simple Science
+% template" (scifile.tex).  It is not intended as an example of how to
+% set up your BibTeX file.
+
+
+
+
+@misc{tth, note = "The package is TTH, available at
+http://hutchinson.belmont.ma.us/tth/ ."}
+
+@misc{ali, note = "Presented here- https://www.youtube.com/watch?v=zDddDTbEYpE ."}
+
+@misc{mps, note = "Nvidia MPS overview: https://docs.nvidia.com/deploy/mps/index.html"}
+
+@misc{kaggle, note= "Kaggle: State of Machine Learning And Data Science 2021: https://www.kaggle.com/kaggle-survey-2021"}
+
+@misc{wab, note = "Weights and Biases - Monitor and Improve GPU Usage for Training Deep Learning Models: https://towardsdatascience.com/measuring-actual-gpu-usage-for-deep-learning-training-e2bf3654bcfd "}
+
+@misc{runai, note = "Run.ai - Optimal Cluster Utilization: https://www.run.ai/blog/reduce-cost-by-75-with-fractional-gpu-for-deep-learning-inference/"}
+
+@misc{aws, note = "AWS GPU instances : https://docs.aws.amazon.com/dlami/latest/devguide/gpu.html "}
+
+@misc{GCP, note = "GCP GPU instances : https://cloud.google.com/compute/docs/gpus "}
+
+@misc{onprem, note = "On-premise solutions : https://www.nvidia.com/en-us/deep-learning-ai/solutions/on-premises/ "}
+
+@misc{kub1, note = "Kubernetes GPU restrictions : https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/ "}
+
+@inproceedings{delimitrou,
+    author = {Christina Delimitrou},
+    title = {Improving resource efficiency in cloud computing },
+    year = {2015}
+}
+
+@inproceedings{baechi, author = {Jeon, Beomyeol et al.}, title = {Baechi: Fast Device Placement of Machine Learning Graphs}, year = {2020}, isbn = {9781450381376}, publisher = {Association for Computing Machinery}, address = {New York, NY, USA}, url = {https://doi.org/10.1145/3419111.3421302}, doi = {10.1145/3419111.3421302}, abstract = {Machine Learning graphs (or models) can be challenging or impossible to train when either devices have limited memory, or the models are large. Splitting the model graph across multiple devices, today, largely relies on learning-based approaches to generate this placement. While it results in models that train fast on data (i.e., with low step times), learning-based model-parallelism is time-consuming, taking many hours or days to create a placement plan of operators on devices. We present the Baechi system, where we adopt an algorithmic approach to the placement problem for running machine learning training graphs on a small cluster of memory-constrained devices. We implemented Baechi so that it works modularly with TensorFlow. Our experimental results using GPUs show that Baechi generates placement plans in time 654X--206K X faster than today's learning-based approaches, and the placed model's step time is only up to 6.2% higher than expert-based placements.}, booktitle = {Proceedings of the 11th ACM Symposium on Cloud Computing}, pages = {416–430}, numpages = {15}, keywords = {placement algorithms, distributed systems, TensorFlow, machine learning systems, constrained memory}, location = {Virtual Event, USA}, series = {SoCC '20} }
+
+@inproceedings{gandiva, author = {Xiao et al.}, title = {Gandiva: Introspective Cluster Scheduling for Deep Learning}, year = {2018}, isbn = {9781931971478}, publisher = {USENIX Association}, address = {USA}, abstract = {We introduce Gandiva, a new cluster scheduling framework that utilizes domain-specific knowledge to improve latency and efficiency of training deep learning models in a GPU cluster.One key characteristic of deep learning is feedback-driven exploration, where a user often runs a set of jobs (or a multi-job) to achieve the best result for a specific mission and uses early feedback on accuracy to dynamically prioritize or kill a subset of jobs; simultaneous early feedback on the entire multi-job is critical. A second characteristic is the heterogeneity of deep learning jobs in terms of resource usage, making it hard to achieve best-fit a priori. Gandiva addresses these two challenges by exploiting a third key characteristic of deep learning: intra-job predictability, as they perform numerous repetitive iterations called mini-batch iterations. Gandiva exploits intra-job predictability to time-slice GPUs efficiently across multiple jobs, thereby delivering low-latency. This predictability is also used for introspecting job performance and dynamically migrating jobs to better-fit GPUs, thereby improving cluster efficiency.We show via a prototype implementation and micro-benchmarks that Gandiva can speed up hyper-parameter searches during deep learning by up to an order of magnitude, and achieves better utilization by transparently migrating and time-slicing jobs to achieve better job-to-resource fit. We also show that, in a real workload of jobs running in a 180-GPU cluster, Gandiva improves aggregate cluster utilization by 26%, pointing to a new way of managing large GPU clusters for deep learning.}, booktitle = {Proceedings of the 13th USENIX Conference on Operating Systems Design and Implementation}, pages = {595–610}, numpages = {16}, location = {Carlsbad, CA, USA}, series = {OSDI'18} }
+
+
+@inproceedings {antman,
+author = {Wencong Xiao et al.},
+title = {AntMan: Dynamic Scaling on {GPU} Clusters for Deep Learning},
+booktitle = {14th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 20)},
+year = {2020},
+isbn = {978-1-939133-19-9},
+pages = {533--548},
+url = {https://www.usenix.org/conference/osdi20/presentation/xiao},
+publisher = {{USENIX} Association},
+month = nov,
+}
+
+
+@inbook{clockwork,
+author = {Gujarati, Arpan et al.},
+title = {Serving DNNs like Clockwork: Performance Predictability from the Bottom Up},
+year = {2020},
+isbn = {978-1-939133-19-9},
+publisher = {USENIX Association},
+address = {USA},
+abstract = {Machine learning inference is becoming a core building block for interactive web applications.
+As a result, the underlying model serving systems on which these applications depend
+must consistently meet low latency targets. Existing model serving architectures use
+well-known reactive techniques to alleviate common-case sources of latency, but cannot
+effectively curtail tail latency caused by unpredictable execution times. Yet the
+underlying execution times are not fundamentally unpredictable--on the contrary we
+observe that inference using Deep Neural Network (DNN) models has deterministic performance.Here,
+starting with the predictable execution times of individual DNN inferences, we adopt
+a principled design methodology to successively build a fully distributed model serving
+system that achieves predictable end-to-end performance. We evaluate our implementation,
+Clockwork, using production trace workloads, and show that Clockwork can support thousands
+of models while simultaneously meeting 100 ms latency targets for 99.9999% of requests.
+We further demonstrate that Clockwork exploits predictable execution times to achieve
+tight request-level service-level objectives (SLOs) as well as a high degree of request-level
+performance isolation.},
+booktitle = {Proceedings of the 14th USENIX Conference on Operating Systems Design and Implementation},
+articleno = {25},
+numpages = {20}
+}
+
+@inproceedings {tiresias,
+author = {Juncheng Gu and Mosharaf Chowdhury and Kang G. Shin and Yibo Zhu and Myeongjae Jeon and Junjie Qian and Hongqiang Liu and Chuanxiong Guo},
+title = {Tiresias: A {GPU} Cluster Manager for Distributed Deep Learning},
+booktitle = {16th {USENIX} Symposium on Networked Systems Design and Implementation ({NSDI} 19)},
+year = {2019},
+isbn = {978-1-931971-49-2},
+address = {Boston, MA},
+pages = {485--500},
+url = {https://www.usenix.org/conference/nsdi19/presentation/gu},
+publisher = {{USENIX} Association},
+month = feb,
+}
+
+@inproceedings {hived,
+author = {Hanyu Zhao et al.},
+title = {HiveD: Sharing a {GPU} Cluster for Deep Learning with Guarantees},
+booktitle = {14th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 20)},
+year = {2020},
+isbn = {978-1-939133-19-9},
+pages = {515--532},
+url = {https://www.usenix.org/conference/osdi20/presentation/zhao-hanyu},
+publisher = {{USENIX} Association},
+month = nov,
+}
+
+@article{nimble,
+  title={Nimble: Lightweight and Parallel GPU Task Scheduling for Deep Learning},
+  author={Woosuk Kwon and Gyeong-In Yu and Eunji Jeong and Byung-Gon Chun},
+  journal={NIPS},
+  year={2020},
+  volume={abs/2012.02732}
+}
+
+@inproceedings{harmony,
+  author={Lee, Woo-Yeon et al.},
+  booktitle={2021 IEEE 41st International Conference on Distributed Computing Systems (ICDCS)}, 
+  title={Harmony: A Scheduling Framework Optimized for Multiple Distributed Machine Learning Jobs}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={841-851},
+  doi={10.1109/ICDCS51616.2021.00085}}
+
+
+@inproceedings{dnnmem,
+author = {Gao, Yanjie et al.},
+title = {Estimating GPU Memory Consumption of Deep Learning Models},
+year = {2020},
+isbn = {9781450370431},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3368089.3417050},
+doi = {10.1145/3368089.3417050},
+abstract = {Deep learning (DL) has been increasingly adopted by a variety of software-intensive
+systems. Developers mainly use GPUs to accelerate the training, testing, and deployment
+of DL models. However, the GPU memory consumed by a DL model is often unknown to them
+before the DL job executes. Therefore, an improper choice of neural architecture or
+hyperparameters can cause such a job to run out of the limited GPU memory and fail.
+Our recent empirical study has found that many DL job failures are due to the exhaustion
+of GPU memory. This leads to a horrendous waste of computing resources and a significant
+reduction in development productivity. In this paper, we propose DNNMem, an accurate
+estimation tool for GPU memory consumption of DL models. DNNMem employs an analytic
+estimation approach to systematically calculate the memory consumption of both the
+computation graph and the DL framework runtime. We have evaluated DNNMem on 5 real-world
+representative models with different hyperparameters under 3 mainstream frameworks
+(TensorFlow, PyTorch, and MXNet). Our extensive experiments show that DNNMem is effective
+in estimating GPU memory consumption.},
+booktitle = {Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+pages = {1342–1352},
+numpages = {11},
+keywords = {estimation model, memory consumption, deep learning, program analysis},
+location = {Virtual Event, USA},
+series = {ESEC/FSE 2020}
+}
+

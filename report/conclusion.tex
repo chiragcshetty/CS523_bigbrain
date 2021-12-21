@@ -1,0 +1,5 @@
+\section{Conclusion}
+
+In this project we attempted to combine fast and automated Model Parallelism with deep learning job scheduler. The key objective was to improve GPU utilization by granular GPU allocation while also preventing OOM errors without developer having to explicitly worry about it. The project succeeded in automating the model splitting without developer intervention. However such model splitting is beneficial only when the model is large enough not to fit on one GPU. We could not demonstrate that model parallelism can be a useful tool in enhancing GPU utilization due to having no support from hardware for task parallelism.
+
+We also built a BBJob abstraction to submit deep learning jobs to such a scheduler. More information about the same is in the video.

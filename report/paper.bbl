@@ -1,0 +1,73 @@
+\begin{thebibliography}{10}
+
+\bibitem{aws}
+AWS GPU instances : https://docs.aws.amazon.com/dlami/latest/devguide/gpu.html.
+
+\bibitem{GCP}
+GCP GPU instances : https://cloud.google.com/compute/docs/gpus.
+
+\bibitem{onprem}
+On-premise solutions :
+  https://www.nvidia.com/en-us/deep-learning-ai/solutions/on-premises/.
+
+\bibitem{wab}
+Weights and Biases - Monitor and Improve GPU Usage for Training Deep Learning
+  Models:
+  https://towardsdatascience.com/measuring-actual-gpu-usage-for-deep-learning-training-e2bf3654bcfd.
+
+\bibitem{kub1}
+Kubernetes GPU restrictions :
+  https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/.
+
+\bibitem{kaggle}
+Kaggle: State of Machine Learning And Data Science 2021:
+  https://www.kaggle.com/kaggle-survey-2021.
+
+\bibitem{runai}
+Run.ai - Optimal Cluster Utilization:
+  https://www.run.ai/blog/reduce-cost-by-75-with-fractional-gpu-for-deep-learning-inference/.
+
+\bibitem{mps}
+Nvidia MPS overview: https://docs.nvidia.com/deploy/mps/index.html.
+
+\bibitem{ali}
+Presented here- https://www.youtube.com/watch?v=zDddDTbEYpE .
+
+\bibitem{delimitrou}
+{\sc Delimitrou, C.}
+\newblock Improving resource efficiency in cloud computing.
+
+\bibitem{antman}
+{\sc et~al., W.~X.}
+\newblock Antman: Dynamic scaling on {GPU} clusters for deep learning.
+\newblock In {\em 14th {USENIX} Symposium on Operating Systems Design and
+  Implementation ({OSDI} 20)\/} (Nov. 2020), {USENIX} Association,
+  pp.~533--548.
+
+\bibitem{gandiva}
+{\sc et~al., X.}
+\newblock Gandiva: Introspective cluster scheduling for deep learning.
+\newblock In {\em Proceedings of the 13th USENIX Conference on Operating
+  Systems Design and Implementation\/} (USA, 2018), OSDI'18, USENIX
+  Association, p.~595–610.
+
+\bibitem{clockwork}
+{\sc Gujarati, A. e.~a.}
+\newblock {\em Serving DNNs like Clockwork: Performance Predictability from the
+  Bottom Up}.
+\newblock USENIX Association, USA, 2020.
+
+\bibitem{baechi}
+{\sc Jeon, B. e.~a.}
+\newblock Baechi: Fast device placement of machine learning graphs.
+\newblock In {\em Proceedings of the 11th ACM Symposium on Cloud Computing\/}
+  (New York, NY, USA, 2020), SoCC '20, Association for Computing Machinery,
+  p.~416–430.
+
+\bibitem{nimble}
+{\sc Kwon, W., Yu, G.-I., Jeong, E., and Chun, B.-G.}
+\newblock Nimble: Lightweight and parallel gpu task scheduling for deep
+  learning.
+\newblock {\em NIPS abs/2012.02732\/} (2020).
+
+\end{thebibliography}

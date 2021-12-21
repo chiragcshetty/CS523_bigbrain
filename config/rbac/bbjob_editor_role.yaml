@@ -1,0 +1,24 @@
+# permissions for end users to edit bbjobs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: bbjob-editor-role
+rules:
+- apiGroups:
+  - big-brain.github.com
+  resources:
+  - bbjobs
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - big-brain.github.com
+  resources:
+  - bbjobs/status
+  verbs:
+  - get

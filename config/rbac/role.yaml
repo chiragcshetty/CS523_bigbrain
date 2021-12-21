@@ -1,0 +1,34 @@
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: null
+  name: manager-role
+rules:
+- apiGroups:
+  - big-brain.github.com
+  resources:
+  - bbjobs
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - big-brain.github.com
+  resources:
+  - bbjobs/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - big-brain.github.com
+  resources:
+  - bbjobs/status
+  verbs:
+  - get
+  - patch
+  - update

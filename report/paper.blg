@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: paper.aux
+The style file: acm.bst
+Database file #1: scibib.bib
+Warning--to sort, need author or key in aws
+Warning--to sort, need author or key in GCP
+Warning--to sort, need author or key in onprem
+Warning--to sort, need author or key in wab
+Warning--to sort, need author or key in kub1
+Warning--to sort, need author or key in kaggle
+Warning--to sort, need author or key in runai
+Warning--to sort, need author or key in mps
+Warning--to sort, need author or key in ali
+Warning--empty booktitle in delimitrou
+Warning--empty chapter and pages in clockwork
+You've used 15 entries,
+            2253 wiz_defined-function locations,
+            583 strings with 5816 characters,
+and the built_in function-call counts, 3381 in all, are:
+= -- 304
+> -- 66
+< -- 0
++ -- 33
+- -- 18
+* -- 161
+:= -- 413
+add.period$ -- 26
+call.type$ -- 15
+change.case$ -- 44
+chr.to.int$ -- 0
+cite$ -- 26
+duplicate$ -- 192
+empty$ -- 396
+format.name$ -- 18
+if$ -- 803
+int.to.chr$ -- 0
+int.to.str$ -- 15
+missing$ -- 7
+newline$ -- 59
+num.names$ -- 12
+pop$ -- 152
+preamble$ -- 1
+purify$ -- 39
+quote$ -- 0
+skip$ -- 162
+stack$ -- 0
+substring$ -- 143
+swap$ -- 64
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 58
+warning$ -- 11
+while$ -- 17
+width$ -- 17
+write$ -- 109
+(There were 11 warnings)
