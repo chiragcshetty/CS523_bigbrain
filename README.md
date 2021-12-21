@@ -34,25 +34,25 @@ conda install -y \
 pip install -f https://download.mosek.com/stable/wheel/index.html Mosek==8.1.82
 
 
-//For running pytorch/summarize.py (torch-1.9.0)
+*****For running pytorch/summarize.py (torch-1.9.0)*****
 conda install pytorch torchvision torchaudio -c pytorch # torch 1.9 (as of 20 July 2021)
 conda install -c conda-forge jupyterlab
 pip install sklearn matplotlib opencv-python
 python3 summarize.py --prof_rounds 4 --prof_gpu_id 0 --gpu_num 4 --sch sct --batch_size 32 --type all
 
 
-// To track GPU usage
+*******To track GPU usage********
 pip install GPUtil
 
 
-// To plot memory traces (not needed for the core code)
+***To plot memory traces (not needed for the core code)***
 pip install pandas
 
 
-//for gpu memory commands: torch.cuda.list_gpu_processes()
+***for gpu memory commands: torch.cuda.list_gpu_processes()***
 
 
-// For debug
+***For debug***
 pip install psutil
 
 '''
